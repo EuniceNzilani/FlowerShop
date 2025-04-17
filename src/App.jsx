@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import MoneyBouquets from './pages/MoneyBouquets'
 import CustomBouquets from './pages/CustomBouquets'
 import Cart from './pages/Cart'
+import Checkout from './pages/CheckOut'
+import OrderConfirmation from './pages/OrderConfirmation'
 import { CartProvider } from './context/CartContext'
 import './index.css'
 
@@ -21,6 +23,8 @@ function App() {
               <Route path="/money-bouquets" element={<MoneyBouquets />} />
               <Route path="/custom-bouquets" element={<CustomBouquets />} />
               <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/order-confirmation" element={<OrderConfirmation />} />
             </Routes>
           </main>
           <Footer />
